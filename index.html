@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+
+    <title>Desafio BPM</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container">
+                <img class="rounded-circle" src="./src/img/logo.png" height="50" alt="Logo da Loja">
+                <span class="navbar-brand mb-0 h1 text-light">API Github</span>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="mt-4">
+        <div class="container bg-light rounded shadow">
+            <h1 class="mb-4 pt-4 pb-4">Repositórios</h1>
+
+            <div class="input-group pb-4">
+                <select class="form-control col-md-6" name="repo" id="repo">
+                    <option value="default">Selecione o repositório</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contributors -->
+    <section class="mt-4">
+        <div class="container bg-light rounded shadow">
+            <div class="table-responsive">
+                <h5 class="">Contributors <span class="badge badge-primary">+100</span></h5>
+                <table id="contributors-100" class="table table-striped">
+                    <thead class="thead-dark">
+                        <th colspan="2" class="text-center wid-small">Usuário</th>
+                        <th class="wid-big">Link do Perfil</th>
+                        <th class="wid-smaller">Contribuições</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive">
+                <h5 class="">Contributors <span class="badge badge-primary">+200</span></h5>
+                <table id="contributors-200" class="table table-striped">
+                    <thead class="thead-dark">
+                        <th colspan="2" class="text-center wid-small">Usuário</th>
+                        <th class="wid-big">Link do Perfil</th>
+                        <th class="wid-smaller">Contribuições</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class=" table-responsive">
+                <h5 class="">Contributors <span class="badge badge-primary">+500</span></h5>
+                <table id="contributors-500" class="table table-striped">
+                    <thead class="thead-dark">
+                        <th colspan="2" class="text-center wid-small">Usuário</th>
+                        <th class="wid-big">Link do Perfil</th>
+                        <th class="wid-smaller">Contribuições</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Issues -->
+    <section class="mt-4">
+        <div class="container bg-light rounded shadow">
+            <div class="table-responsive">
+                <h5 class="">Issues</h5>
+                <table id="issues" class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                        <th colspan="2" class="text-center">Usuário</th>
+                        <th>Título</th>
+                        <th class="wid-smaller">
+                            <select class="form-select form-select-lg" name="estado" id="estado">
+                                <option value="default">Estado</option>
+                                <option value="open">Open</option>
+                                <option value="closed">Closed</option>
+                            </select>
+                        </th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="comments-modal" tabindex="-1" role="dialog" aria-labelledby="comments-modal"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="comments-modal"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="body bg-light p-4"></div>
+                    <div class="comments p-4"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript (Opcional) -->
+    <script type="module" src="./scripts/scripts.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
